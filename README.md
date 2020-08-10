@@ -1,40 +1,41 @@
-# Javascript Speach Recognition
+# :zap: Javascript Speach Recognition
 
-Wes Bos Youtube Javascript30 tutorial: [JavaScript Speech Recognition #JavaScript30 20/30](https://www.youtube.com/watch?v=0mJC0A72Fnw&index=20&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH).
-
+* Wes Bos Youtube Javascript30 tutorial: [JavaScript Speech Recognition #JavaScript30 20/30](https://www.youtube.com/watch?v=0mJC0A72Fnw&index=20&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH).
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Javascript Speach Recognition](#zap-javascript-speach-recognition)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 * Tutorial Code for speach recognition using javascript, part of Javascript30 Youtube series by Wes Bos.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/speach.png).
 
-## Technologies
+## :signal_strength: Technologies
 
 * [Javascript v1.9 ECMA-262 ECMAScript 2018](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
-## Setup
+## :floppy_disk: Setup
 
 * To install 'browser-sync' dependencies, type 'npm i'.
+* To run app type 'npm run start' then click on html file manager that appears - `http://localhost:3000/index.html`.
 
-* To run app type 'npm start' then click on html file in browser.
-
-## Code Examples
+## :computer: Code Examples
 
 * speach recognition function to convert speach to paragraphs.
 
@@ -44,7 +45,7 @@ Wes Bos Youtube Javascript30 tutorial: [JavaScript Speech Recognition #JavaScrip
       .map(result => result[0])
       .map(result => result.transcript)
       .join(''); // join strings
-  
+
       // create paragraph for each body of speach.
       p.textContent = transcript;
       if (e.results[0].isFinal) {
@@ -52,31 +53,30 @@ Wes Bos Youtube Javascript30 tutorial: [JavaScript Speech Recognition #JavaScrip
         words.appendChild(p);
       }
       if(transcript.includes('say the date' || 'the date')) {
-        console.log(Date.now())   
+        console.log(Date.now())
       }
 
       if(transcript.includes('unicorn')) {
-        console.log('🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄')   
+        console.log('🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄')
       }
 
       console.log(transcript);
   });
 ```
 
-## Features
+## :cool: Features
 
-*  Add functions that can be triggered by certain words or phrases, such as 'get the weather'.
+* Functions can be added that are triggered by certain words or phrases, such as 'get the weather'.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: Working.
+* To-Do: nothing.
 
-* To-Do: Could use for a special needs app.
-
-## Inspiration
+## :clap: Inspiration
 
 * Wes Bos Youtube Javascript30 tutorial: [JavaScript Speech Recognition #JavaScript30 20/30](https://www.youtube.com/watch?v=0mJC0A72Fnw&index=20&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
